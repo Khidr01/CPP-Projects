@@ -1,5 +1,7 @@
 #include <iostream>
 /* Tic tac toe game */
+/* Khidr which is me is the creator of this cpp file */
+/* Feel free to use and edit it. */
 
 void update(char _table[3][3], int updateVal, char role);
 void draw_table(char table_arr[3][3]);
@@ -19,6 +21,10 @@ int winningSituations[7][3] = {
         {3, 6, 9},
         {1, 5, 9},
         /*
+        Those are all possibilities to win in 
+        the game, but since I implemented a sort
+        algorithm. There is no need for all these
+        possibilities again.
         {3, 5, 7},
         {3, 2, 1},
         {6, 5, 4},
@@ -200,9 +206,14 @@ void bubbleSort(int arr[], int reachPoint)
             }
         }
     }
+        /*
+        This section was used for testing purposes
+        I wanted to see how the sort algorithm is working
+        on the array of x and o records.
     std::cout << "\t\t\t\tLooping throw the record after sorting it" << std::endl;
     for (int k = 0; k <= 4; k++)
     {
         std::cout << "\t\t\t\t" << arr[k] << " " << std::endl;
     }
+        */
 }
